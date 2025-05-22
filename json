@@ -1,0 +1,69 @@
+{
+  "variables": [],
+  "theme": {
+    "colors": {
+      "primary": "#4E8EFF",
+      "background": "#FFFFFF",
+      "text": "#000000"
+    },
+    "font": "Inter",
+    "avatar": null
+  },
+  "settings": {
+    "name": "Lost in TON - Accueil",
+    "description": "Un onboarding immersif pour les nouveaux aventuriers sur la blockchain TON.",
+    "language": "fr",
+    "startNodeId": "welcome"
+  },
+  "nodes": [
+    {
+      "id": "welcome",
+      "type": "message",
+      "content": "👋 Bienvenue, aventurier. Tu viens de te réveiller dans un monde fait de blocs, de bots, et de tokens. Tu es perdu ? C’est normal. Tu es exactement au bon endroit.",
+      "buttons": [
+        { "text": "🎮 Jouer", "target": "story" },
+        { "text": "🧠 Comprendre", "target": "story" },
+        { "text": "🧭 Obtenir le Kit", "target": "story" }
+      ]
+    },
+    {
+      "id": "story",
+      "type": "message",
+      "content": "“Dans cette jungle numérique, un seul outil peut te sauver. On l’appelle : le Kit du Débutant TON.”",
+      "buttons": [
+        { "text": "🔓 Je veux le Kit", "target": "kit" }
+      ]
+    },
+    {
+      "id": "kit",
+      "type": "message",
+      "content": "📘 Voici ton Kit du Débutant TON :\n👉 [Lien à insérer ici]\n\nMaintenant, choisis ton rôle dans l’aventure.",
+      "buttons": [
+        { "text": "🧠 L’Éclaireur", "target": "eclaireur" },
+        { "text": "🎮 Le Fighter", "target": "fighter" },
+        { "text": "🧙‍♂️ L’Alchimiste", "target": "alchimiste" },
+        { "text": "🏗️ L’Architecte", "target": "architecte" }
+      ]
+    },
+    {
+      "id": "eclaireur",
+      "type": "message",
+      "content": "🧠 Tu es un Éclaireur. Tu veux comprendre avant d’agir.\n\n🔹 Mission :\n1. Rejoins le canal Telegram : [https://t.me/Lost_in_ton]\n2. Lis le kit attentivement\n3. Pose une question ou partage une ressource dans le canal"
+    },
+    {
+      "id": "fighter",
+      "type": "message",
+      "content": "🎮 Tu es un Fighter. Tu cliques, tu farm, tu grind.\n\n🔥 Mission :\n1. Clique au moins 2 bots du kit\n2. Poste ton wallet TON vide dans le canal\n3. Prépare-toi à recevoir tes premières missions\n\n👉 Canal : [https://t.me/Lost_in_ton]"
+    },
+    {
+      "id": "alchimiste",
+      "type": "message",
+      "content": "🧙‍♂️ Tu es un Alchimiste. Tu explores les mystères de la DeFi sur TON.\n\n🧪 Mission :\n1. Trouve un bot ou protocole DeFi simple dans le kit\n2. Teste-le (pas besoin d’investir de l’argent)\n3. Partage ton retour dans le canal\n\n👉 [https://t.me/Lost_in_ton]"
+    },
+    {
+      "id": "architecte",
+      "type": "message",
+      "content": "🏗️ Tu es un Architecte. Tu veux construire, coder, inventer sur TON.\n\n⚙️ Mission :\n1. Trouve un bot open source ou un framework\n2. Propose une idée de projet dans le canal\n3. Recrute ou rejoins une team\n\n👉 [https://t.me/Lost_in_ton]"
+    }
+  ]
+}
